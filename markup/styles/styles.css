@@ -97,6 +97,7 @@ body {
     fill: #000000;
     outline: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .filter {
