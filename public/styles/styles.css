@@ -77,6 +77,8 @@ body {
 }
 
 .button:active {
+    outline: none;
+    border: 3px solid transparent;
     color: rgba(255, 255, 255, 0.6);;
     background-color: rgba(238, 42, 35, 0.8);
 }
@@ -181,6 +183,11 @@ body {
     transform: translate(0, 3px);
 }
 
+.button-add-favorite:focus {
+    border: 3px solid transparent;
+    outline: none;
+}
+
 .button-add-favorite:active .favorite-icon {
     fill: rgba(238, 42, 35, 1);
 }
@@ -195,6 +202,15 @@ body {
 
 .button-add-favorite:active .active-favorite-icon {
     fill: #000000;
+}
+
+
+.button-add-favorite:focus .favorite-icon {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.button-add-favorite:focus .active-favorite-icon {
+    fill: rgba(238, 42, 35, 0.5);
 }
 
 .footer-content {
