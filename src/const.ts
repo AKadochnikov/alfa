@@ -13,3 +13,7 @@ export enum NameSpace {
 export enum ApiRoute {
     Neko = 'neko',
 }
+
+export enum AppRoute {
+    Main = '/'
+}

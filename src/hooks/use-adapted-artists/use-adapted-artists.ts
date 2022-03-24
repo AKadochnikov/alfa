@@ -8,12 +8,13 @@ import {getAdaptedArtists} from '../../util';
 export const useAdaptedArtists = (amount: number) => {
   const artists = useSelector(getArtists);
   const dispatch = useDispatch();
-  const {data, isFetching} = useGetArtistsQuery(amount);
+  const {data, isFetching, isError} = useGetArtistsQuery(amount);
+
   useEffect( () => {
     if(data && Array.isArray(data.results)) {
       const adaptedArtists = getAdaptedArtists(data.results);
       dispatch(addArtists(adaptedArtists));
     }
   }, [data, dispatch]);
-  return {artists, isFetching};
+  return {artists, isFetching, isError};
 };
