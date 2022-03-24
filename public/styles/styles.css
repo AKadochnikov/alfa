@@ -45,6 +45,10 @@ body {
     overflow: hidden;
 }
 
+.padding-container {
+    padding: 0 20px 0 20px;
+}
+
 .container {
     background-color: #fff7f6;
     margin: 0 auto;
@@ -91,6 +95,7 @@ body {
 .header-content {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -102,10 +107,6 @@ body {
     flex-grow: 1;
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(0, 0 , 0, 0.1);
-}
-
-.padding-container {
-    padding: 0 20px 0 20px;
 }
 
 .filter {
@@ -263,14 +264,26 @@ body {
     fill: rgba(0, 0, 0, 0.4);
 }
 
-.alfa-bank-icon {
+.alfa-icon {
     fill: rgba(238, 42, 35, 1);
 }
 
-.footer-link:hover .alfa-bank-icon {
+.footer-link:hover .alfa-icon {
     fill: rgba(238, 42, 35, 0.8);
 }
 
-.footer-link:active .alfa-bank-icon {
+.footer-link:active .alfa-icon {
     fill: rgba(238, 42, 35, 0.4);
+}
+
+.digital-icon {
+    fill: rgba(0, 0, 0, 1);
+}
+
+.footer-link:hover .digital-icon {
+    fill: rgba(0, 0, 0, 0.8);
+}
+
+.footer-link:active .digital-icon {
+    fill: rgba(0, 0, 0, 0.4);
 }
