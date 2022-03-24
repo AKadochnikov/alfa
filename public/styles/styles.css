@@ -287,3 +287,21 @@ body {
 .footer-link:active .digital-icon {
     fill: rgba(0, 0, 0, 0.4);
 }
+
+@media screen and (max-width: 795px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
