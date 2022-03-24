@@ -1,4 +1,10 @@
+import {useAdaptedArtists} from '../../hooks/use-adapted-artists/use-adapted-artists';
+import {CURRENT_AMOUNT} from '../../const';
+
 function CardList ():JSX.Element {
+  const {artists} = useAdaptedArtists(CURRENT_AMOUNT);
+  // eslint-disable-next-line no-console
+  console.log(artists);
   return (
     <section className="cards">
       <h2 className="visually-hidden">Карточки с информацией артистов</h2>
