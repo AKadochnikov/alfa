@@ -1,5 +1,5 @@
 export const BASE_URL = 'https://nekos.best/api/v2/';
-export const CURRENT_AMOUNT = 15;
+export const CURRENT_AMOUNT = 9;
 
 export enum Params {
     Amount = 'amount=',

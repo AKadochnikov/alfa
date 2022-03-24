@@ -6,6 +6,7 @@ export type Artists = {
 }
 
 export type AdaptedArtists = {
+    id: string,
     artistHref: string,
     artistName: string,
     sourceUrl: string,
